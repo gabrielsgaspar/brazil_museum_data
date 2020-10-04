@@ -31,8 +31,8 @@ def data_folder(museums):
     """
     # Set loop to check if folder exists for each museum
     for museum in museums:
-        if not os.path.exists('../data/{}'.format(museum)):
-            os.makedirs('../data/{}'.format(museum))
+        if not os.path.exists('../data/{}'.format(museum.replace(" ", "_").lower())):
+            os.makedirs('../data/{}'.format(museum.replace(" ", "_").lower()))
 
 # Define function to download all museum data
 def download_museum(museums):
@@ -82,21 +82,21 @@ if __name__ == "__main__":
         """)
     # Set up url handle of apis for museums that use Tainacam as dictionary
     museums = {
-                "Museu_Historico_Nacional": ("http://mhn.acervos.museus.gov.br", 24),
-                "Museu_do_Diamante": ("https://museudodiamante.acervos.museus.gov.br", 11603),
-                "Museu_do_Ouro": ("https://museudoouro.acervos.museus.gov.br", 3583),
-                "Museu_Victor_Meirelles": ("http://museuvictormeirelles.acervos.museus.gov.br", 18004),
-                "Museu_Regional_Casa_dos_Ottoni": ("https://museuregionalcasadosottoni.acervos.museus.gov.br", 31492),
-                "Museu_de_Arqueologia_de_Itaipu": ("http://museudearqueologiadeitaipu.museus.gov.br", 94553),
-                "Museu_das_Missoes": ("http://museudasmissoes.acervos.museus.gov.br", 6409),
-                "Museu_da_Bandeiras": ("http://museusibramgoias.acervos.museus.gov.br", 1093),
-                "Museu_Villa_Lobos": ("http://museuvillalobos.acervos.museus.gov.br", 1570),
-                "Museu_Casa_de_Benjamin_Constant": ("http://museucasabenjaminconstant.acervos.museus.gov.br", 5347),
-                "Museu_da_Inconfidencia": ("http://museudainconfidencia.acervos.museus.gov.br", 9),
-                "Museu_Regional_de_Sao_Joao_del-Rei": ("http://museuregionaldesaojoaodelrei.acervos.museus.gov.br", 11451),
-                "Museu_de_Arte_Sacra_da_Boa_Morte": ("http://museusibramgoias.acervos.museus.gov.br", 3387),
-                "Museu_Casa_da_Hera": ("http://museucasadahera.acervos.museus.gov.br", 7),
-                "Museu_Casa_Histórica_de_Alcantara": ("http://museucasahistoricadealcantara.acervos.museus.gov.br/", 14284)
+                "Museu Historico Nacional": ("http://mhn.acervos.museus.gov.br", 24),
+                "Museu do Diamante": ("https://museudodiamante.acervos.museus.gov.br", 11603),
+                "Museu do Ouro": ("https://museudoouro.acervos.museus.gov.br", 3583),
+                "Museu Victor Meirelles": ("http://museuvictormeirelles.acervos.museus.gov.br", 18004),
+                "Museu Regional Casa dos Ottoni": ("https://museuregionalcasadosottoni.acervos.museus.gov.br", 31492),
+                "Museu de Arqueologia de Itaipu": ("http://museudearqueologiadeitaipu.museus.gov.br", 94553),
+                "Museu das Missoes": ("http://museudasmissoes.acervos.museus.gov.br", 6409),
+                "Museu da Bandeiras": ("http://museusibramgoias.acervos.museus.gov.br", 1093),
+                "Museu Villa Lobos": ("http://museuvillalobos.acervos.museus.gov.br", 1570),
+                "Museu Casa de Benjamin_Constant": ("http://museucasabenjaminconstant.acervos.museus.gov.br", 5347),
+                "Museu da Inconfidencia": ("http://museudainconfidencia.acervos.museus.gov.br", 9),
+                "Museu Regional de Sao Joao del-Rei": ("http://museuregionaldesaojoaodelrei.acervos.museus.gov.br", 11451),
+                "Museu de Arte Sacra da Boa Morte": ("http://museusibramgoias.acervos.museus.gov.br", 3387),
+                "Museu Casa da Hera": ("http://museucasadahera.acervos.museus.gov.br", 7),
+                "Museu Casa Histórica de Alcantara": ("http://museucasahistoricadealcantara.acervos.museus.gov.br/", 14284)
             }
     # Check if data directory exists for each museum
     print("Checking if data directories exist ...")
