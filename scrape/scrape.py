@@ -68,7 +68,7 @@ def download_museum(museums):
             # Increase page count for next loop
             page += 1
         # Save museum data in data/[MUSEUM] folder
-        museum_data.to_csv("../data/{}/raw.csv".format(museum), index = False, encoding = "utf-8-sig")
+        museum_data.to_csv("../data/{}/raw.csv".format(museum.replace(" ", "_").lower()), index = False, encoding = "utf-8-sig")
 
 if __name__ == "__main__":
     # Print message for download
