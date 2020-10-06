@@ -29,35 +29,35 @@ The repo has the following structure:
 ├── LICENSE
 ├── README.md
 ├── data
-│   ├── Museu_Casa_Histórica_de_Alcantara
+├── museu_casa_da_hera
 │   │   └── raw.csv
-│   ├── Museu_Casa_da_Hera
+│   ├── museu_casa_de_benjamin_constant
 │   │   └── raw.csv
-│   ├── Museu_Casa_de_Benjamin_Constant
+│   ├── museu_casa_histórica_de_alcantara
 │   │   └── raw.csv
-│   ├── Museu_Historico_Nacional
+│   ├── museu_da_bandeiras
 │   │   └── raw.csv
-│   ├── Museu_Regional_Casa_dos_Ottoni
+│   ├── museu_da_inconfidencia
 │   │   └── raw.csv
-│   ├── Museu_Regional_de_Sao_Joao_del-Rei
+│   ├── museu_das_missoes
 │   │   └── raw.csv
-│   ├── Museu_Victor_Meirelles
+│   ├── museu_de_arqueologia_de_itaipu
 │   │   └── raw.csv
-│   ├── Museu_Villa_Lobos
+│   ├── museu_de_arte_sacra_da_boa_morte
 │   │   └── raw.csv
-│   ├── Museu_da_Bandeiras
+│   ├── museu_do_diamante
 │   │   └── raw.csv
-│   ├── Museu_da_Inconfidencia
+│   ├── museu_do_ouro
 │   │   └── raw.csv
-│   ├── Museu_das_Missoes
+│   ├── museu_historico_nacional
 │   │   └── raw.csv
-│   ├── Museu_de_Arqueologia_de_Itaipu
+│   ├── museu_regional_casa_dos_ottoni
 │   │   └── raw.csv
-│   ├── Museu_de_Arte_Sacra_da_Boa_Morte
+│   ├── museu_regional_de_sao_joao_del-rei
 │   │   └── raw.csv
-│   ├── Museu_do_Diamante
+│   ├── museu_victor_meirelles
 │   │   └── raw.csv
-│   └── Museu_do_Ouro
+│   └── museu_villa_lobos
 │       └── raw.csv
 ├── requirements.txt
 └── scrape
