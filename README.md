@@ -66,4 +66,4 @@ The repo has the following structure:
 
 If you find any bugs with the code, please [raise an issue](https://github.com/gabrielsgaspar/brazil_museum_data/issues/new).
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) file for further details.
+This project is licensed under the MIT License and was made by [@gabrielsgaspar](https://github.com/gabrielsgaspar). See [LICENSE](LICENSE) file for further details.
